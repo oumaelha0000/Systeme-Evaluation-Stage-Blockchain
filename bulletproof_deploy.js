@@ -21,6 +21,11 @@ async function main() {
   console.log("Seeding Roles and Data...");
   await (await contract.grantRole(hre.ethers.id("COMPANY_ROLE"), companyAddress)).wait();
   await (await contract.grantRole(hre.ethers.id("SUPERVISOR_ROLE"), supervisorAddress)).wait();
+  
+  // Whitelist company
+  console.log("Whitelisting company:", companyAddress);
+  await (await contract.whitelistCompany(companyAddress)).wait();
+
   await (await contract.createInternship(studentAddress, companyAddress, supervisorAddress)).wait();
   
   console.log("Seeded successfully!");

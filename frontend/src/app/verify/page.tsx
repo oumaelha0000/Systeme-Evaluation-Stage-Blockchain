@@ -69,7 +69,7 @@ export default function VerifyPage() {
                   min="1"
                   name="tokenId"
                   id="tokenId"
-                  className="focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-10 py-4 sm:text-lg border-gray-300 rounded-xl bg-gray-50 border outline-none transition-shadow"
+                  className="focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-10 py-4 sm:text-lg border-gray-300 rounded-xl bg-gray-50 border outline-none transition-shadow text-gray-900"
                   placeholder="Enter Token ID (e.g. 1)"
                   value={tokenId}
                   onChange={(e) => setTokenId(e.target.value)}

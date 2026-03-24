@@ -5,7 +5,7 @@ import { ethers, BrowserProvider, Contract } from "ethers";
 import InternshipSystemArtifact from "../lib/InternshipSystem.json"; // We will copy this later
 
 // Read contract address from env or replace it here
-const CONTRACT_ADDRESS = "0x8A791620dd6260079BF849Dc5567aDC3F2FdC318"; // Default Hardhat local network address
+const CONTRACT_ADDRESS = "0x5FbDB2315678afecb367f032d93F642f64180aa3"; // Default Hardhat local network address
 
 interface Web3ContextType {
   provider: BrowserProvider | null;
