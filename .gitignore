@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+
+# Hardhat artifacts & cache
+artifacts/
+cache/
+
+# Environment files
+.env
+.env.local
+
+# Build output
+.next/
+out/
+
+# Log files
+*.log
+hh_error.log
+error.txt
+out.txt
+build_err.log
+build_output.log
+deploy_out.txt
+test/accnts.txt
+
+# Database
+*.db
+
+# TypeScript build info
+tsconfig.tsbuildinfo
+
+# IDE / Editor
+.vscode/
+.idea/
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Agent folder
+.agent/
