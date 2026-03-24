@@ -277,7 +277,7 @@ export default function SupervisorPanel() {
               min="1"
               value={internshipId}
               onChange={(e) => setInternshipId(e.target.value)}
-              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition"
+              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition text-gray-900"
               placeholder="e.g. 1"
             />
           </div>
@@ -327,7 +327,7 @@ export default function SupervisorPanel() {
               max="100"
               value={grade}
               onChange={(e) => setGrade(e.target.value)}
-              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition"
+              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition text-gray-900"
               placeholder="e.g. 95"
             />
           </div>

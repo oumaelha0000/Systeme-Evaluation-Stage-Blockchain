@@ -89,7 +89,7 @@ export default function ProfileSetupModal({ account, role, onComplete }: Profile
               value={name}
               onChange={(e) => setName(e.target.value)}
               placeholder="e.g. Dr. Jean Dupont"
-              className="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition text-sm"
+              className="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition text-sm text-gray-900"
             />
           </div>
 
@@ -103,7 +103,7 @@ export default function ProfileSetupModal({ account, role, onComplete }: Profile
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="e.g. jean.dupont@university.edu"
-              className="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition text-sm"
+              className="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition text-sm text-gray-900"
             />
           </div>
 
@@ -116,7 +116,7 @@ export default function ProfileSetupModal({ account, role, onComplete }: Profile
               value={department}
               onChange={(e) => setDepartment(e.target.value)}
               placeholder={fieldLabel === "Department" ? "e.g. Computer Science" : "e.g. Software Engineering"}
-              className="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition text-sm"
+              className="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition text-sm text-gray-900"
             />
           </div>
 

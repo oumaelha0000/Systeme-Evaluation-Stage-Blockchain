@@ -298,7 +298,7 @@ export default function AdminPanel() {
             required
             value={student}
             onChange={(e) => setStudent(e.target.value)}
-            className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition"
+            className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition text-gray-900"
             placeholder="0x..."
           />
         </div>
@@ -310,7 +310,7 @@ export default function AdminPanel() {
             required
             value={company}
             onChange={(e) => setCompany(e.target.value)}
-            className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition"
+            className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition text-gray-900"
             placeholder="0x..."
           />
         </div>
@@ -322,7 +322,7 @@ export default function AdminPanel() {
             required
             value={supervisor}
             onChange={(e) => setSupervisor(e.target.value)}
-            className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition"
+            className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition text-gray-900"
             placeholder="0x..."
           />
         </div>
@@ -354,7 +354,7 @@ export default function AdminPanel() {
               required
               value={whitelistAddress}
               onChange={(e) => setWhitelistAddress(e.target.value)}
-              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none transition"
+              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none transition text-gray-900"
               placeholder="0x..."
             />
           </div>
