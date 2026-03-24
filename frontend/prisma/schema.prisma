@@ -1,0 +1,47 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            String  @id @default(uuid())
+  walletAddress String  @unique
+  role          String  // "Admin", "Company", "Supervisor", "Student"
+  name          String
+  email         String
+  avatar        String?
+  department    String? // Usually for Supervisor/Student
+  industry      String? // Usually for Company
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  // Relationships
+  studentInternships    InternshipDetails[] @relation("StudentInternships")
+  companyInternships    InternshipDetails[] @relation("CompanyInternships")
+  supervisorInternships InternshipDetails[] @relation("SupervisorInternships")
+}
+
+model InternshipDetails {
+  id                String  @id @default(uuid())
+  onChainId         Int?    @unique  // The blockchain integer ID (1, 2, 3...)
+  studentAddress    String
+  companyAddress    String
+  supervisorAddress String
+  
+  title             String
+  description       String?
+  status            String  @default("Registered") // Kanban State: Registered, InReview, Completed
+  companyValidated  Boolean @default(false)         // Mirrors blockchain state for UI filtering
+  
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+
+  // Relationships linked by walletAddress to match Blockchain uniqueness
+  student     User @relation("StudentInternships", fields: [studentAddress], references: [walletAddress])
+  company     User @relation("CompanyInternships", fields: [companyAddress], references: [walletAddress])
+  supervisor  User @relation("SupervisorInternships", fields: [supervisorAddress], references: [walletAddress])
+}
